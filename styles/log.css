@@ -1,0 +1,47 @@
+body{
+    background-image: url(/images/15052-alimentos_orgnicos-comida_rpida-supermercado-buf-500x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 80%);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+h1{
+    align-self: center;
+}
+
+.firstPieceTitle {
+    color: darkcyan;
+}
+
+.user{
+    margin-right: 27px;
+}
+
+button{
+    border-radius: 50px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px !important;
+    width: 150px;
+    align-self: center;
+}
+
+input{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}

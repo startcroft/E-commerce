@@ -1,0 +1,146 @@
+.navbarFirst {
+    background-color: darkcyan !important;
+
+}
+
+.navbar-text {
+    color: white;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.firstPieceTitle {
+    color: darkcyan;
+}
+
+.location {
+    border: none;
+    background-color: transparent;
+    margin-left: 140px;
+    margin-right: 40px;
+}
+
+.navDos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control {
+    width: 350px;
+}
+
+.btn-outline-success {
+    background-color: rgb(255, 167, 19);
+    border-radius: 0%;
+}
+
+.searchIcon {
+    filter: invert(100%) !important;
+}
+
+.navIcons {
+    width: 38px;
+    padding: 8px;
+}
+
+.bord {
+    border-right: 1px solid black;
+}
+
+.navbar-nav {
+    margin-left: 300px;
+}
+
+.navMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navMenu__options {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-weight: 700;
+}
+
+.allCategoriesButton {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: darkcyan;
+    color: white;
+    font-weight: 600;
+    height: 50px;
+}
+
+.allCategoriesicon {
+    filter: invert(100%);
+}
+
+.wishTitle{
+    background-color: rgb(240, 240, 240);
+    padding: 12px;
+}
+
+.wishTitle h2{
+    font-size: 25px;
+}
+
+.productsSection {
+    display: flex;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    width: 202px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.productImage {
+    width: 195px;
+}
+
+.productName {
+    font-size: 20px;
+}
+
+.productPrice {
+    font-weight: 700;
+    color: darkcyan;
+}
+
+.productButtons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.productButtons button {
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.addCarIcon {
+    background-color: skyblue;
+    width: 20px;
+}
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 1000px;
+}

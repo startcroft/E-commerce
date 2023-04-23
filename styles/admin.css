@@ -1,0 +1,211 @@
+.navbarFirst {
+    background-color: darkcyan !important;
+
+}
+
+.navbar-text {
+    color: white;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.firstPieceTitle {
+    color: darkcyan;
+}
+
+.location {
+    border: none;
+    background-color: transparent;
+    margin-left: 140px;
+    margin-right: 40px;
+}
+
+.navDos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control {
+    width: 350px;
+}
+
+.btn-outline-success {
+    background-color: rgb(255, 167, 19);
+    border-radius: 0%;
+}
+
+.searchIcon {
+    filter: invert(100%) !important;
+}
+
+.navIcons {
+    width: 38px;
+    padding: 8px;
+}
+
+.bord {
+    border-right: 1px solid black;
+}
+
+.navbar-nav {
+    margin-left: 300px;
+}
+
+.navMenu{
+    display: flex;
+    justify-content: center;
+}
+
+navButtons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.allCategoriesButton {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: darkcyan;
+    color: white;
+    font-weight: 600;
+    height: 50px;
+    margin: 10px;
+}
+
+.allCategoriesicon {
+    filter: invert(100%);
+}
+
+.createProduct{
+    border-radius: 5px;
+    background-color: rgb(255, 167, 19);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+.promotions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.promotions :nth-child(1) {
+    width: 725px;
+}
+
+.promotions :nth-child(2) {
+    width: 360px;
+}
+
+.promotions :nth-child(3) img {
+    width: 360px;
+}
+
+.promotions :nth-child(4) img {
+    width: 360px;
+}
+
+.promotions :nth-child(5) img {
+    width: 360px;
+}
+
+.healthyFood {
+    width: 360px !important;
+}
+
+.categorys {
+    width: 350px;
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+}
+
+.categoryTitle {
+    font-size: 25px;
+    border-bottom: 3px solid darkcyan;
+    width: 120px;
+    padding: 5px;
+}
+
+.categoryList {
+    list-style: none;
+}
+
+.categoryList li {
+    font-weight: 700;
+    color: gray;
+    margin: 15px 0;
+}
+
+.categoryIcon {
+    width: 45px;
+}
+
+.categoryButton {
+    border: none;
+    background: rgb(240, 240, 240);
+}
+
+.offerProducts {
+    padding: 5px;
+}
+
+.offerTitle {
+    font-size: 30px;
+    width: 235px;
+    border-bottom: 3px solid darkcyan;
+    padding: 5px;
+}
+
+.productsSection {
+    display: flex;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    width: 202px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.productImage {
+    width: 195px;
+}
+
+.productName {
+    font-size: 20px;
+}
+
+.productPrice {
+    font-weight: 700;
+    color: darkcyan;
+}
+
+.productButtons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.productButtons button {
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.addCarIcon {
+    background-color: skyblue;
+    width: 20px;
+}
+
+.productContainer {
+    padding: 5px;
+}
