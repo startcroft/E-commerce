@@ -99,6 +99,7 @@ a {
 
 .productsSection {
     display: flex;
+    justify-content: center;
 }
 
 .productCard {
@@ -107,7 +108,12 @@ a {
     width: 202px;
     border: 1px solid gray;
     padding: 5px;
+    position: relative;
 }
+
+.productCard:hover .productButtons{
+    visibility: visible;
+   }
 
 .productImage {
     width: 195px;
@@ -125,6 +131,10 @@ a {
 .productButtons {
     display: flex;
     justify-content: space-evenly;
+    position: absolute;
+    bottom: 3px;
+    left: 50px;
+    visibility: hidden;
 }
 
 .productButtons button {

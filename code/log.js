@@ -47,11 +47,7 @@ const submitUser = async (form) => {
       if (user[0].rol === "administrador") {
         alert("Has iniciado sesión"
         )
-        // .then(() => {
-        //   // sessionStorage.setItem("user", JSON.stringify(user[0]));
-        //   // window.location = "./admin.html";
-        //   console.log(user[0].rol);
-        // })
+
         sessionStorage.setItem("user", JSON.stringify(user[0]));
         window.location = "./admin.html";
       } else if (user[0].rol === "cliente") {

@@ -173,12 +173,19 @@ a {
     display: flex;
     flex-direction: column;
     width: 202px;
+    height: 280px;
     border: 1px solid gray;
     padding: 5px;
+    position: relative;
 }
 
+.productCard:hover .productButtons{
+ visibility: visible;
+}
+
+
 .productImage {
-    width: 195px;
+    width: 190px;
 }
 
 .productName {
@@ -193,6 +200,10 @@ a {
 .productButtons {
     display: flex;
     justify-content: space-evenly;
+    position: absolute;
+    bottom: 3px;
+    left: 50px;
+    visibility: hidden;
 }
 
 .productButtons button {
