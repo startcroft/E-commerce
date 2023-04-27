@@ -41,14 +41,6 @@
       "quantity": 1
     },
     {
-      "id": 6,
-      "nombre": "Crema De Whisky Baileys",
-      "image": "https://piragua.com.co/wp-content/uploads/2021/02/Crema-de-Whisky-Baileys-1000ml-piragua.jpg",
-      "precio": 85000,
-      "category": "beverages",
-      "quantity": 1
-    },
-    {
       "id": 7,
       "nombre": "Avena Alpina",
       "image": "https://pimiento.com.co/4199-large_default/avena-alpina-original-x-280-g.jpg",
@@ -113,7 +105,32 @@
       "password": "angel"
     }
   ],
-  "arrayCar": [
+  "arrayCar": [],
+  "arrayFavoritos": [
+    {
+      "id": 4,
+      "nombre": "Uva",
+      "image": "https://terrabad.co/wp-content/uploads/2020/09/uva-chilena.jpg",
+      "precio": 4000,
+      "category": "vegetables and fruits",
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Mango",
+      "image": "https://www.laprensa.hn/binrepository/1020x680/0c50/1020d580/none/11004/GWEB/imagen-je-portadilla2-270422_1407316_20220427112040.jpg",
+      "precio": 3000,
+      "category": "vegetables and fruits",
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "nombre": "Crema De Whisky Baileys",
+      "image": "https://piragua.com.co/wp-content/uploads/2021/02/Crema-de-Whisky-Baileys-1000ml-piragua.jpg",
+      "precio": 85000,
+      "category": "beverages",
+      "quantity": 1
+    },
     {
       "id": 11,
       "nombre": "Cheesetris",
@@ -121,44 +138,74 @@
       "precio": 1500,
       "category": "biscuits and snacks",
       "quantity": 1
-    },
-    {
-      "id": 10,
-      "nombre": "Frutos secos",
-      "image": "https://gastronomiaycia.republica.com/wp-content/uploads/2018/06/hct_vasitos_frutos_mascar_f-680x538.jpg",
-      "precio": 8000,
-      "category": "desserts",
-      "quantity": 1
     }
   ],
-  "arrayFavoritos": [
+  "arrayCompras": [
     {
-      "id": 10,
-      "nombre": "Frutos secos",
-      "image": "https://gastronomiaycia.republica.com/wp-content/uploads/2018/06/hct_vasitos_frutos_mascar_f-680x538.jpg",
-      "precio": 8000,
-      "category": "desserts"
+      "nameInput": "Diego",
+      "adressInput": "La esmeralda",
+      "phoneInput": "2345678",
+      "carProducts": [
+        {
+          "id": 2,
+          "nombre": "Mango",
+          "image": "https://www.laprensa.hn/binrepository/1020x680/0c50/1020d580/none/11004/GWEB/imagen-je-portadilla2-270422_1407316_20220427112040.jpg",
+          "precio": 3000,
+          "category": "vegetables and fruits",
+          "quantity": 4
+        },
+        {
+          "id": 6,
+          "nombre": "Crema De Whisky Baileys",
+          "image": "https://piragua.com.co/wp-content/uploads/2021/02/Crema-de-Whisky-Baileys-1000ml-piragua.jpg",
+          "precio": 85000,
+          "category": "beverages",
+          "quantity": 1
+        }
+      ],
+      "totalPurcharsing": "97000",
+      "id": 1
     },
     {
-      "id": 5,
-      "nombre": "Vino D’VINE ",
-      "image": "https://adex-b2peru.s3.amazonaws.com/userfiles/product/photos/29_5f56b3d0907b0.jpg",
-      "precio": 70000,
-      "category": "beverages"
-    },
-    {
-      "id": 6,
-      "nombre": "Crema De Whisky Baileys",
-      "image": "https://piragua.com.co/wp-content/uploads/2021/02/Crema-de-Whisky-Baileys-1000ml-piragua.jpg",
-      "precio": 85000,
-      "category": "beverages"
-    },
-    {
-      "id": 7,
-      "nombre": "Avena Alpina",
-      "image": "https://pimiento.com.co/4199-large_default/avena-alpina-original-x-280-g.jpg",
-      "precio": 5000,
-      "category": "beverages"
+      "nameInput": "Whitney",
+      "adressInput": "La Alhambra",
+      "phoneInput": "321345555",
+      "carProducts": [
+        {
+          "id": 6,
+          "nombre": "Crema De Whisky Baileys",
+          "image": "https://piragua.com.co/wp-content/uploads/2021/02/Crema-de-Whisky-Baileys-1000ml-piragua.jpg",
+          "precio": 85000,
+          "category": "beverages",
+          "quantity": 1
+        },
+        {
+          "id": 10,
+          "nombre": "Frutos secos",
+          "image": "https://gastronomiaycia.republica.com/wp-content/uploads/2018/06/hct_vasitos_frutos_mascar_f-680x538.jpg",
+          "precio": 8000,
+          "category": "desserts",
+          "quantity": 4
+        },
+        {
+          "id": 7,
+          "nombre": "Avena Alpina",
+          "image": "https://pimiento.com.co/4199-large_default/avena-alpina-original-x-280-g.jpg",
+          "precio": 5000,
+          "category": "beverages",
+          "quantity": 1
+        },
+        {
+          "id": 11,
+          "nombre": "Cheesetris",
+          "image": "https://caprichoslatinos.com/wp-content/uploads/2021/07/cheese-tris.png",
+          "precio": 1500,
+          "category": "biscuits and snacks",
+          "quantity": 2
+        }
+      ],
+      "totalPurcharsing": "125000",
+      "id": 2
     }
   ]
 }

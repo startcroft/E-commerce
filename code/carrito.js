@@ -1,19 +1,24 @@
 const URL_CAR = "http://localhost:3000/arrayCar"
 const carContainer = document.querySelector(".productContainer");
 const totalTag = document.querySelector(".totalTag");
-const getCarProducts = async(url) => {
+const checkoutButton = document.querySelector(".checkoutButton");
+const cancelButton = document.querySelector(".cancelBuy");
+const modalForm = document.querySelector(".modal-interface");
+const buyButton = document.querySelector(".buyButton");
+
+const getCarProducts = async (url) => {
     try {
-     const { data } = await axios.get(url);
-     return data;
+        const { data } = await axios.get(url);
+        return data;
     } catch (error) {
         alert("Error al consultar la API");
     }
 }
 
 const printCarCards = (container, carList) => {
-  container.innerHTML = "";
-  carList.forEach((element) => {
-    container.innerHTML += `
+    container.innerHTML = "";
+    carList.forEach((element) => {
+        container.innerHTML += `
     <div class="productCard">
                     <img class="productImage"
                         src="${element.image}" alt="${element.nombre}">
@@ -38,10 +43,10 @@ const printCarCards = (container, carList) => {
                     <button name=${element.id} class="cancelProduct"><img name=${element.id} class="cancelIcon" src="../images/x-square.svg" alt="Quitar producto"></button>
                 </div>
     `
-  })
+    })
 }
 
-document.addEventListener("DOMContentLoaded", async() => {
+document.addEventListener("DOMContentLoaded", async () => {
     const carProducts = await getCarProducts(URL_CAR);
     printCarCards(carContainer, carProducts);
     const numero = await totalizarCompra();
@@ -49,13 +54,13 @@ document.addEventListener("DOMContentLoaded", async() => {
     totalTag.textContent = numero;
 })
 
-document.addEventListener(`click`, async(event) => {
-    if(event.target.classList.contains("addQuantity") || event.target.classList.contains("plusIcon")){
+document.addEventListener(`click`, async (event) => {
+    if (event.target.classList.contains("addQuantity") || event.target.classList.contains("plusIcon")) {
         const id = event.target.getAttribute("name");
-        const carProducts =  await getCarProducts(URL_CAR);
+        const carProducts = await getCarProducts(URL_CAR);
 
-        carProducts.forEach((element) =>{
-            if(element.id == id){
+        carProducts.forEach((element) => {
+            if (element.id == id) {
                 let cantidad = element.quantity + 1;
                 axios.put(`http://localhost:3000/arrayCar/${element.id}`, {
                     id: element.id,
@@ -65,17 +70,17 @@ document.addEventListener(`click`, async(event) => {
                     category: element.category,
                     quantity: cantidad
                 })
-                .then(res => console.log(res.data));
+                    .then(res => console.log(res.data));
             }
         })
     }
 
-    if(event.target.classList.contains("lessQuantity") || event.target.classList.contains("lessIcon")){
+    if (event.target.classList.contains("lessQuantity") || event.target.classList.contains("lessIcon")) {
         const id = event.target.getAttribute("name");
-        const carProducts =  await getCarProducts(URL_CAR);
+        const carProducts = await getCarProducts(URL_CAR);
 
-        carProducts.forEach((element) =>{
-            if(element.id == id){
+        carProducts.forEach((element) => {
+            if (element.id == id) {
                 let cantidad = element.quantity - 1;
                 axios.put(`http://localhost:3000/arrayCar/${element.id}`, {
                     id: element.id,
@@ -85,31 +90,70 @@ document.addEventListener(`click`, async(event) => {
                     category: element.category,
                     quantity: cantidad
                 })
-                .then(res => console.log(res.data));
+                    .then(res => console.log(res.data));
             }
         })
     }
 
-    if(event.target.classList.contains("cancelProduct") || event.target.classList.contains("cancelIcon")){
+    if (event.target.classList.contains("cancelProduct") || event.target.classList.contains("cancelIcon")) {
         const id = event.target.getAttribute("name");
-        const carProducts =  await getCarProducts(URL_CAR);
+        const carProducts = await getCarProducts(URL_CAR);
 
-        carProducts.forEach((element) =>{
-            if(element.id == id){
+        carProducts.forEach((element) => {
+            if (element.id == id) {
                 axios.delete(`http://localhost:3000/arrayCar/${element.id}`)
-                .then(res => console.log(res.data));
+                    .then(res => console.log(res.data));
                 alert("Se ha eliminado del carrito");
             }
         })
     }
 })
 
-const totalizarCompra = async() => {
-    const carProducts =  await getCarProducts(URL_CAR);
+const totalizarCompra = async () => {
+    const carProducts = await getCarProducts(URL_CAR);
     let totalCompra = 0;
     carProducts.forEach((element) => {
-      totalCompra = totalCompra + (element.quantity * element.precio);
+        totalCompra = totalCompra + (element.quantity * element.precio);
     })
     return totalCompra
 }
 
+checkoutButton.addEventListener(`click`, (e) => {
+    e.preventDefault();
+    modalForm.classList.add("modal-interface--show");
+})
+
+cancelButton.addEventListener(`click`, (e) => {
+    e.preventDefault();
+    modalForm.classList.remove("modal-interface--show");
+})
+
+buyButton.addEventListener(`click`, async (e) => {
+    e.preventDefault();
+    const carProducts = await getCarProducts(URL_CAR);
+    const nameInput = document.querySelector(".name").value;
+    const adressInput = document.querySelector(".adress").value;
+    const phoneInput = document.querySelector(".phone").value;
+    const totalPurcharsing = totalTag.textContent;
+
+        axios({
+            method: `POST`,
+            url: "http://localhost:3000/arrayCompras",
+            data: {
+                nameInput,
+                adressInput,
+                phoneInput,
+                carProducts,
+                totalPurcharsing
+            }
+        }).then(res => console.log(res.data));
+
+    carProducts.forEach(element => {
+            axios.delete(`http://localhost:3000/arrayCar/${element.id}`)
+            .then(res => console.log(res.data));
+        
+    })
+
+    alert("La compra se realizó con exito");
+    modalForm.classList.remove("modal-interface--show");
+})

@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Favorites</title>
+  <title>crear producto</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  <link rel="stylesheet" href="/styles/favoritos.css">
+  <link rel="stylesheet" href="/styles/createProduct.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
   </div>
   <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between">
     <div class="container-md navDos">
-      <a class="navbar-brand" href="./index.html">
+      <a class="navbar-brand" href="./admin.html">
         <span class="firstPieceTitle">Fast</span><span class="secondPieceTitle">kart</span>
       </a>
       <button class="location">
@@ -66,9 +66,7 @@
   <nav class="navbar navbar-expand-md navMenu">
 
       <div class="container-fluid">
-        <button class="allCategoriesButton"> <img class="allCategoriesicon" src="/images/filter-left.svg" alt="filter icon">
-          All categories</button>
-      
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -86,30 +84,25 @@
   </div>
   </nav>
 
-  <div class="wishTitle">
-    <h2>wishlist</h2>
-  </div>
+  <main class="container-md mainContent">
+    <h1 class="titleForm" >Crear un nuevo producto</h1>
 
-  <main class="container-md">
-    <section class="productsSection">
+    <form class="productForm">
+        <label for="">Nombre</label>
+        <input type="text" class="nameProduct">
+        <label for="">Imagen(url)</label>
+        <input type="text" class="productImage">
+        <label for="">Precio</label>
+        <input type="text" class="priceProduct">
+        <label for="">categoría</label>
+        <input type="text" class="categoryProduct">
 
-        <div class="productContainer">
-          <div class="productCard">
-            <img class="productImage" src="https://static.libertyprim.com/files/familles/banane-large.jpg?1569271725"
-              alt="Bananas">
-            <h3 class="productName">Bananas</h3>
-            <span class="productPrice">$ 1500</span>
-            <div class="productButtons">
-              <button class="addCar">Add <img class="addCarIcon" src="/images/cart-plus.svg" alt="Add to card"></button>
-              <button class="addFavorite"><img class="addHeart" src="/images/heart.svg" alt="favorite"></button>
-          </div>
-        </div>
-      </div>
-    </section>
+        <button class="createProduct">Crear Producto</button>
+    </form>
   </main>
 
 
-  <script src="../code/favoritos.js" type="module"></script>
+  <script src="../code/createProduct.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </body>

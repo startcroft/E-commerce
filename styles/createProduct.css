@@ -1,0 +1,114 @@
+.navbarFirst {
+    background-color: darkcyan !important;
+
+}
+
+.navbar-text {
+    color: white;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.firstPieceTitle {
+    color: darkcyan;
+}
+
+.location {
+    border: none;
+    background-color: transparent;
+    margin-left: 140px;
+    margin-right: 40px;
+}
+
+.navDos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control {
+    width: 350px;
+}
+
+.btn-outline-success {
+    background-color: rgb(255, 167, 19);
+    border-radius: 0%;
+}
+
+.searchIcon {
+    filter: invert(100%) !important;
+}
+
+.navIcons {
+    width: 38px;
+    padding: 8px;
+}
+
+.bord {
+    border-right: 1px solid black;
+}
+
+.navbar-nav {
+    margin-left: 300px;
+}
+
+.navMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navMenu__options {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-weight: 700;
+}
+
+.productForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.productForm label{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.productForm input{
+    width: 400px;
+    height: 40px;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin: 40px;
+    font-size: 30px;
+}
+
+.createProduct{
+    border-radius: 5px;
+    background-color: darkcyan;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 300px;
+    height: 40px;
+    align-self: center;
+    margin-top: 20px;
+}

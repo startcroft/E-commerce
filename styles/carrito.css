@@ -189,3 +189,67 @@ footer{
     width: 50px;
     visibility: hidden;
 }
+
+.modal-interface{
+    background-color: #111111bd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-interface--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.buyForm{
+    margin: auto;
+    width: 40%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buyForm input{
+    margin: 10px;
+    padding: 10px;
+}
+
+.buyButtons{
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.buyButtons button{
+    margin-left: 12px;
+}
+
+.cancelBuy{
+    border: none;
+    background: rgb(190, 190, 190);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(60, 60, 60);
+    width: 90px;
+}
+
+.buyButton{
+    border: none;
+    background: rgb(230, 20, 40);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    width: 90px;   
+}
+

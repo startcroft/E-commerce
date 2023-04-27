@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Favorites</title>
+  <title>Bills</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  <link rel="stylesheet" href="/styles/favoritos.css">
+  <link rel="stylesheet" href="/styles/facturas.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
   </div>
   <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between">
     <div class="container-md navDos">
-      <a class="navbar-brand" href="./index.html">
+      <a class="navbar-brand" href="./admin.html">
         <span class="firstPieceTitle">Fast</span><span class="secondPieceTitle">kart</span>
       </a>
       <button class="location">
@@ -54,7 +54,8 @@
             <a class="nav-link" href="#"><img class="navIcons bord" src="/images/heart.svg" alt="icon"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./carritoCompras.html"><img class="navIcons bord" src="/images/cart3.svg" alt="icon"></a>
+            <a class="nav-link" href="./carritoCompras.html"><img class="navIcons bord" src="/images/cart3.svg"
+                alt="icon"></a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled"><img class="navIcons" src="/images/person.svg" alt="icon"></a>
@@ -65,43 +66,48 @@
   </nav>
   <nav class="navbar navbar-expand-md navMenu">
 
-      <div class="container-fluid">
-        <button class="allCategoriesButton"> <img class="allCategoriesicon" src="/images/filter-left.svg" alt="filter icon">
-          All categories</button>
-      
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-    <ul class="navMenu__options navbar-nav ms-auto">
-      <li class="nav-item"><a href="">Home <img src="/images/chevron-down.svg" alt="icon"></a></li>
-      <li class="nav-item"><a href="">Shop <img src="/images/chevron-down.svg" alt="icon"></a></li>
-      <li class="nav-item"><a href="">Product <img src="/images/chevron-down.svg" alt="icon"></a></li>
-      <li class="nav-item"><a href="">Mega Menu <img src="/images/chevron-down.svg" alt="icon"></a></li>
-      <li class="nav-item"><a href="">Blog <img src="/images/chevron-down.svg" alt="icon"></a></li>
-      <li class="nav-item"><a href="">Pages <img src="/images/chevron-down.svg" alt="icon"></a></li>
-      <li class="nav-item"><a href="">Contact <img src="/images/chevron-down.svg" alt="icon"></a></li>
-    </ul>
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navMenu__options navbar-nav ms-auto">
+          <li class="nav-item"><a href="">Home <img src="/images/chevron-down.svg" alt="icon"></a></li>
+          <li class="nav-item"><a href="">Shop <img src="/images/chevron-down.svg" alt="icon"></a></li>
+          <li class="nav-item"><a href="">Product <img src="/images/chevron-down.svg" alt="icon"></a></li>
+          <li class="nav-item"><a href="">Mega Menu <img src="/images/chevron-down.svg" alt="icon"></a></li>
+          <li class="nav-item"><a href="">Blog <img src="/images/chevron-down.svg" alt="icon"></a></li>
+          <li class="nav-item"><a href="">Pages <img src="/images/chevron-down.svg" alt="icon"></a></li>
+          <li class="nav-item"><a href="">Contact <img src="/images/chevron-down.svg" alt="icon"></a></li>
+        </ul>
+      </div>
     </div>
-  </div>
   </nav>
 
   <div class="wishTitle">
-    <h2>wishlist</h2>
+    <h2>Facturas</h2>
   </div>
 
   <main class="container-md">
-    <section class="productsSection">
+    <section class="billSection">
 
-        <div class="productContainer">
-          <div class="productCard">
-            <img class="productImage" src="https://static.libertyprim.com/files/familles/banane-large.jpg?1569271725"
-              alt="Bananas">
-            <h3 class="productName">Bananas</h3>
-            <span class="productPrice">$ 1500</span>
-            <div class="productButtons">
-              <button class="addCar">Add <img class="addCarIcon" src="/images/cart-plus.svg" alt="Add to card"></button>
-              <button class="addFavorite"><img class="addHeart" src="/images/heart.svg" alt="favorite"></button>
+      <div class="billCard">
+        <div class="dataSection">
+          <h3>Alejandro Lopez</h3>
+          <span>Dirección: La Vascula</span>
+          <span>Número: 3137243546</span>
+          <h4>total: 60000</h4>
+        </div>
+
+
+        <div class="productSection">
+          <h4>Productos</h4>
+          <div class="productData">
+            <span>Nombre: Uvas</span>
+            <span>cantidad: 1</span>
+            <span>precio Unitario: 4000</span>
           </div>
         </div>
       </div>
@@ -109,7 +115,7 @@
   </main>
 
 
-  <script src="../code/favoritos.js" type="module"></script>
+  <script src="../code/facturas.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </body>

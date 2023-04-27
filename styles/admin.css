@@ -90,6 +90,16 @@ navButtons{
     margin: 10px;
 }
 
+.botonFacturas{
+    border-radius: 5px;
+    background-color: purple;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+
 .promotions {
     display: flex;
     flex-wrap: wrap;
@@ -137,6 +147,7 @@ navButtons{
 
 .categoryList {
     list-style: none;
+    width: 325px;
 }
 
 .categoryList li {
@@ -175,7 +186,11 @@ navButtons{
     width: 202px;
     border: 1px solid gray;
     padding: 5px;
+    position: relative;
 }
+.productCard:hover .productButtons{
+    visibility: visible;
+   }
 
 .productImage {
     width: 195px;
@@ -190,9 +205,14 @@ navButtons{
     color: darkcyan;
 }
 
+
 .productButtons {
     display: flex;
     justify-content: space-evenly;
+    position: absolute;
+    bottom: 3px;
+    left: 50px;
+    visibility: hidden;
 }
 
 .productButtons button {
@@ -201,11 +221,21 @@ navButtons{
     border-radius: 5px;
 }
 
-.addCarIcon {
+.editProduct {
     background-color: skyblue;
     width: 20px;
 }
-
 .productContainer {
     padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.editProduct{
+    width: 28px;
+}
+
+.editIcon{
+    width: 20px;
 }
